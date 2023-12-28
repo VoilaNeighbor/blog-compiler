@@ -1,5 +1,7 @@
 const std = @import("std");
 
+pub const SourceIterator = struct {};
+
 pub fn main() !void {
     const allocator = std.heap.page_allocator;
 
@@ -29,11 +31,15 @@ pub fn main() !void {
     std.debug.print("Hello, world!", .{});
 }
 
-test "Deduce title from first H1 heading" {
+test "Compile markdown files to HTML" {
     // TODO
 }
 
 test "Copy non-md files to out" {
+    // TODO
+}
+
+test "Deduce title from first H1 heading" {
     // TODO
 }
 
